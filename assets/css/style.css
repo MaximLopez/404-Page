@@ -1,0 +1,60 @@
+@charset "UTF-8";
+/* Réglage du texte */
+h1 {
+  font-size: 30px;
+}
+
+h1, p {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+
+p {
+  font-size: 18px;
+}
+
+.credits {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  font-size: 12px;
+}
+
+/* Réglage de la page */
+body {
+  background-image: url("../img/background.jpg");
+}
+
+/* Réglage du Gif */
+.gif {
+  width: 30%;
+  padding-bottom: 1%;
+  display: block;
+  margin: auto;
+  margin-top: 9%;
+}
+
+/* Réglage de l'animation */
+:root {
+  --mainColor: #ff9800;
+}
+
+a {
+  background: -webkit-gradient(linear, left top, left bottom, from(var(--mainColor)), to(var(--mainColor)));
+  background: -webkit-linear-gradient(top, var(--mainColor) 0%, var(--mainColor) 100%);
+  background: -o-linear-gradient(top, var(--mainColor) 0%, var(--mainColor) 100%);
+  background: linear-gradient(to bottom, var(--mainColor) 0%, var(--mainColor) 100%);
+  background-position: 0 100%;
+  background-repeat: repeat-x;
+  background-size: 4px 4px;
+  color: white;
+  text-decoration: none;
+  -webkit-transition: background-size .2s;
+  -o-transition: background-size .2s;
+  transition: background-size .2s;
+}
+
+a:hover {
+  background-size: 4px 50px;
+}
